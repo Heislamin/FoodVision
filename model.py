@@ -5,7 +5,7 @@ import numpy as np
 
 # —– Load your model —–
 # Option A: SavedModel directory
-model = keras.models.load_model("food_classifier")
+model = keras.models.load_model("mymodel.h5")
 # Option B: single HDF5 file
 # model = keras.models.load_model("food_classifier.h5")
 
@@ -19,7 +19,7 @@ def preprocess(img: Image.Image) -> np.ndarray:
     return np.expand_dims(arr, axis=0)
 
 # —– Class names (match your training) —–
-CLASS_NAMES = ["burger", "pizza", "salad", "sushi", /* … */]
+CLASS_NAMES = ["pizza", "steak", /* … */]
 
 # —– Prediction function —–
 def predict(img: Image.Image) -> str:
