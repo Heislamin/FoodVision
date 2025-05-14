@@ -29,4 +29,4 @@ if uploaded_file:
     if st.button("Classify"):
         with st.spinner("Analyzing..."):
             #label = predict(image)
-        st.success(f"**Prediction:** {label}")
+            st.success(f"**Prediction:** {label}")
