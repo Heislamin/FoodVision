@@ -1,7 +1,7 @@
 # app.py
 import streamlit as st
 from PIL import Image
-#from model import predict
+from model import predict
 
 # ——— Page config ———
 st.set_page_config(
@@ -28,5 +28,5 @@ if uploaded_file:
     # Classification button
     if st.button("Classify"):
         with st.spinner("Analyzing..."):
-            #label = predict(image)
-            st.success(f"**Prediction:** {label}")
+            label = predict(image)
+        st.success(f"**Prediction:** {label}")
