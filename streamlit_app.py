@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from model import predict_image
+from model.py import predict_image
 
 st.set_page_config(
     page_title="🍽️ Food Vision Classifier",
