@@ -31,4 +31,4 @@ if uploaded_file:
     if st.button("Classify"):
         with st.spinner("Analyzing..."):
             label, confidence = predict_image(image)
-        st.success(f"Prediction: **{label}** ({confidence * 100:.1f}% confidence)")
+        st.success(f"Prediction: **{label}** ({confidence}% confidence)")
