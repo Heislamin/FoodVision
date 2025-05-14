@@ -1,7 +1,7 @@
 # app.py
 import streamlit as st
 from PIL import Image
-from model import predict
+from model.py import predict
 
 # ——— Page config ———
 st.set_page_config(
