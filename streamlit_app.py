@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from model import predict
+from mymodel import predict
 
 st.set_page_config(
     page_title="🍔 Food Vision",
