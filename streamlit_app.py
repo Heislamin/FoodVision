@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from mymodel import predict
+from model.py import predict
 
 st.set_page_config(
     page_title="🍔 Food Vision",
@@ -22,5 +22,5 @@ if uploaded_file:
 
     if st.button("Classify"):
         with st.spinner("Analyzing..."):
-            label = predict(image)               # ← make sure this line is active
+            label = predict(image) 
         st.success(f"**Prediction:** {label}")
