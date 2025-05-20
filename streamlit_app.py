@@ -27,7 +27,7 @@ if uploaded_file:
     image.thumbnail((300, 300))  # max width/height = 300px
 
     # Display the thumbnail
-    st.image(image, caption="Uploaded image", use_column_width=False, width=300)
+    st.image(image, caption="Uploaded image", use_container_width=False, width=300)
 
     # Classification button
     if st.button("Classify"):
