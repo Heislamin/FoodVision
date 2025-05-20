@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 from PIL import Image
 from model import predict_image
 
@@ -30,5 +30,5 @@ if uploaded_file:
     # Classification button
     if st.button("Classify"):
         with st.spinner("Analyzing..."):
-            label = predict_image(image)
-        st.success(f"Prediction: {label}")
+            prediction = predict_image(image)
+        st.success(f"It's a **{prediction}**!")
